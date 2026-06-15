@@ -1,0 +1,8 @@
+node_modules/
+.netlify/
+dist/
+*.log
+.env
+.DS_Store
+Thumbs.db
+assets/sgt-slider-06.jpg

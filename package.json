@@ -1,0 +1,17 @@
+{
+  "name": "sicilian-odyssey-html-tailwind",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static HTML and Tailwind CSS conversion of The Sicilian Outbound Gala 2026 site.",
+  "scripts": {
+    "build": "npm run build:css && node ./scripts/build.mjs",
+    "build:css": "tailwindcss -i ./src/input.css -o ./tailwind.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./tailwind.css --watch",
+    "start": "python -m http.server 4173 --directory dist --bind 127.0.0.1",
+    "check": "node --check app.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}

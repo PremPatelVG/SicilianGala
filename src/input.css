@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@source "../index.html";
+@source "../app.js";
+
+@theme {
+  --font-display: "Unbounded", "Montserrat", system-ui, sans-serif;
+  --font-body: "Manrope", "Inter", system-ui, sans-serif;
+  --color-background: #0a0810;
+  --color-card: #15101d;
+  --color-gold: #d4a64a;
+  --color-gold-soft: #ffc97b;
+  --color-burgundy: #862726;
+  --color-midnight: #030356;
+  --color-ember: #d63200;
+  --color-violet: #5f4b8b;
+}
