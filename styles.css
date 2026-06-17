@@ -28,6 +28,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -38,6 +40,12 @@ body {
 button,
 input {
   font: inherit;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
 }
 
 .text-fluid-hero {
@@ -980,6 +988,344 @@ input {
 @media (max-width: 63.99rem) {
   .sgt-slider {
     min-height: clamp(24rem, 82vw, 36rem);
+  }
+}
+
+@media (max-width: 639px) {
+  :root {
+    --phone-page-pad: clamp(1rem, 5vw, 1.35rem);
+  }
+
+  html {
+    scroll-padding-top: calc(var(--site-header-height, 8rem) + 0.75rem);
+  }
+
+  body {
+    min-width: 0;
+  }
+
+  header > .relative {
+    padding-top: max(0.75rem, env(safe-area-inset-top));
+    padding-left: max(0.75rem, env(safe-area-inset-left));
+    padding-right: max(0.75rem, env(safe-area-inset-right));
+  }
+
+  .header-shell {
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .brand-mark {
+    min-width: 6.15rem;
+  }
+
+  .brand-logo {
+    height: clamp(2.85rem, 12vw, 3.45rem);
+    max-width: clamp(6.1rem, 27vw, 7.15rem);
+  }
+
+  .presenter-lockup {
+    min-width: 4.3rem;
+  }
+
+  .presenter-logo-frame {
+    min-width: 4.3rem;
+    min-height: 2.1rem;
+    padding: 0.25rem 0.4rem;
+  }
+
+  .presenter-logo {
+    height: clamp(1.45rem, 6vw, 1.72rem);
+    max-width: clamp(3.65rem, 18vw, 4.25rem);
+  }
+
+  header nav[aria-label="Mobile navigation"] {
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+
+  .mobile-nav-link {
+    display: inline-flex;
+    flex: 1 1 calc(50% - 0.45rem);
+    align-items: center;
+    justify-content: center;
+    min-height: 2.35rem;
+    padding: 0.54rem 0.45rem;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 0.14em;
+  }
+
+  #home {
+    min-height: max(100svh, 43rem);
+    padding-top: calc(var(--site-header-height, 9.25rem) + 1rem) !important;
+  }
+
+  #home > .relative,
+  main section > .relative,
+  footer > .relative {
+    padding-left: var(--phone-page-pad) !important;
+    padding-right: var(--phone-page-pad) !important;
+  }
+
+  .hero-content {
+    gap: 1.5rem;
+  }
+
+  .text-fluid-hero {
+    font-size: clamp(2.35rem, 11.8vw, 3.45rem);
+    line-height: 0.98;
+  }
+
+  .text-fluid-kicker {
+    font-size: clamp(1rem, 5.8vw, 1.45rem);
+    line-height: 1.18;
+  }
+
+  .text-fluid-section,
+  .destination-heading,
+  .text-fluid-subsection,
+  .text-fluid-stay,
+  .text-fluid-sgt,
+  .text-fluid-faq,
+  .text-fluid-final {
+    line-height: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .text-fluid-section {
+    font-size: clamp(2.25rem, 12vw, 3.4rem);
+  }
+
+  .destination-heading,
+  .text-fluid-stay {
+    font-size: clamp(2.05rem, 10.5vw, 3.1rem);
+  }
+
+  .text-fluid-sgt {
+    font-size: clamp(2.75rem, 15vw, 4.1rem);
+  }
+
+  .text-fluid-faq,
+  .text-fluid-final {
+    font-size: clamp(2.2rem, 11.5vw, 3.25rem);
+  }
+
+  .text-eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+  }
+
+  .info-pill {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0.72rem 0.85rem;
+  }
+
+  .info-pill span {
+    font-size: 0.68rem;
+    letter-spacing: 0.13em;
+  }
+
+  .gold-button,
+  .outline-button,
+  .outline-gold-button {
+    min-height: 3.15rem;
+    padding-inline: 0.95rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+  }
+
+  #experience,
+  #register,
+  #packages,
+  #sgt,
+  #faq {
+    padding-top: 5.25rem !important;
+    padding-bottom: 5.25rem !important;
+  }
+
+  .experience-heading {
+    font-size: clamp(1.45rem, 8vw, 2.25rem);
+    line-height: 0.96;
+  }
+
+  .experience-heading-line {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.12em;
+    white-space: normal;
+  }
+
+  .experience-card {
+    min-height: 0;
+  }
+
+  .experience-card > .relative {
+    min-height: 22rem !important;
+    padding: 1.5rem !important;
+  }
+
+  .artist-grid {
+    gap: 1rem;
+  }
+
+  .artist-card {
+    min-height: 20rem;
+    aspect-ratio: 3 / 4;
+  }
+
+  .artist-card span {
+    inset-inline: 0.85rem;
+    bottom: 0.85rem;
+    padding: 0.82rem;
+    font-size: 1rem;
+  }
+
+  .included-item {
+    align-items: flex-start;
+    padding-block: 0.95rem;
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
+
+  .partner-card,
+  .date-box,
+  .footer-contact-card {
+    padding: 1rem;
+  }
+
+  .hotel-row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .hotel-row span {
+    grid-column: auto;
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .hotel-row b {
+    text-align: left;
+  }
+
+  .sgt-logo-badge {
+    height: 6rem !important;
+    width: 6rem !important;
+  }
+
+  .sgt-timeline {
+    gap: 0.75rem;
+  }
+
+  .sgt-slider {
+    min-height: clamp(20rem, 98vw, 28rem);
+  }
+
+  .sgt-slider-dots {
+    bottom: 0.85rem;
+    gap: 0.5rem;
+    padding: 0.48rem 0.62rem;
+  }
+
+  .faq-toggle {
+    gap: 1rem !important;
+    padding-top: 1.1rem !important;
+    padding-bottom: 1.1rem !important;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+    line-height: 1.68;
+  }
+
+  .count-cell b {
+    font-size: clamp(1.65rem, 11vw, 2.75rem);
+  }
+
+  .count-cell span {
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+
+  .footer-contact-grid {
+    gap: 0.75rem;
+  }
+
+  .social-link {
+    width: 2.55rem;
+    height: 2.55rem;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 639px) {
+  .mobile-nav-link {
+    flex-basis: calc(33.333% - 0.45rem);
+  }
+
+  #home {
+    min-height: max(100svh, 41rem);
+  }
+}
+
+@media (max-width: 389px) {
+  .header-shell {
+    padding: 0.65rem;
+  }
+
+  .brand-mark {
+    min-width: 5.55rem;
+  }
+
+  .brand-logo {
+    height: 2.7rem;
+    max-width: 5.85rem;
+  }
+
+  .presenter-lockup {
+    min-width: 3.95rem;
+  }
+
+  .presenter-logo-frame {
+    min-width: 3.95rem;
+    min-height: 1.95rem;
+  }
+
+  .presenter-logo {
+    height: 1.36rem;
+    max-width: 3.55rem;
+  }
+
+  .mobile-nav-link {
+    font-size: 0.58rem;
+    letter-spacing: 0.11em;
+  }
+
+  .text-fluid-hero {
+    font-size: clamp(2.1rem, 11.5vw, 2.75rem);
+  }
+
+  .text-fluid-kicker {
+    font-size: clamp(0.96rem, 5.4vw, 1.18rem);
+  }
+
+  .gold-button,
+  .outline-button,
+  .outline-gold-button {
+    letter-spacing: 0.13em;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 480px) {
+  .text-fluid-hero {
+    font-size: clamp(2.55rem, 12vw, 3.65rem);
+  }
+
+  .text-fluid-kicker {
+    font-size: clamp(1.08rem, 5.5vw, 1.48rem);
   }
 }
 
