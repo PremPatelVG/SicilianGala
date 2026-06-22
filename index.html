@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Sicilian Outbound Gala 2026 | Holymont, Udaipur</title>
     <meta
       name="description"
@@ -22,8 +22,8 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./tailwind.css?v=20260617-mobile" />
-    <link rel="stylesheet" href="./styles.css?v=20260617-mobile" />
+    <link rel="stylesheet" href="./tailwind.css?v=partner-assets-20260620" />
+    <link rel="stylesheet" href="./styles.css?v=partner-assets-20260620" />
   </head>
   <body class="bg-background font-body text-white antialiased">
     <div
@@ -60,36 +60,61 @@
             />
           </a>
 
-          <nav class="hidden items-center justify-center gap-6 lg:flex xl:gap-8" aria-label="Primary navigation">
+          <nav class="hidden items-center justify-center gap-4 lg:flex xl:gap-7" aria-label="Primary navigation">
             <a href="#home" class="nav-link">Home</a>
             <a href="#experience" class="nav-link">Experience</a>
             <a href="#register" class="nav-link">Registration</a>
             <a href="#packages" class="nav-link">Packages</a>
             <a href="#sgt" class="nav-link">SGT</a>
+            <a href="#partners" class="nav-link">Partners</a>
             <a href="#faq" class="nav-link">FAQ</a>
           </nav>
 
-          <div class="presenter-lockup flex items-center gap-3">
-            <span class="presenter-label hidden text-[10px] uppercase tracking-[0.28em] text-white/50 sm:inline">Presented by</span>
-            <span class="presenter-logo-frame" aria-label="Presented by BNI Ahmedabad">
-              <img
-                src="./assets/bni-ahmedabad-logo.png"
-                alt="BNI Ahmedabad"
-                class="presenter-logo"
-                width="1200"
-                height="803"
-              />
-            </span>
+          <div class="header-actions flex items-center gap-2 sm:gap-3">
+            <div class="presenter-lockup flex items-center gap-3">
+              <span class="presenter-label hidden text-[10px] uppercase tracking-[0.28em] text-white/50 sm:inline">Presented by</span>
+              <span class="presenter-logo-frame" aria-label="Presented by BNI Ahmedabad">
+                <img
+                  src="./assets/bni-ahmedabad-logo.png"
+                  alt="BNI Ahmedabad"
+                  class="presenter-logo"
+                  width="1200"
+                  height="803"
+                />
+              </span>
+            </div>
+            <button
+              id="mobileMenuToggle"
+              type="button"
+              class="mobile-menu-toggle lg:hidden"
+              aria-label="Open navigation menu"
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </div>
 
-        <nav class="mt-3 flex gap-3 overflow-x-auto pb-1 lg:hidden" aria-label="Mobile navigation">
-          <a href="#home" class="mobile-nav-link">Home</a>
-          <a href="#experience" class="mobile-nav-link">Experience</a>
-          <a href="#register" class="mobile-nav-link">Registration</a>
-          <a href="#packages" class="mobile-nav-link">Packages</a>
-          <a href="#sgt" class="mobile-nav-link">SGT</a>
-          <a href="#faq" class="mobile-nav-link">FAQ</a>
+        <button id="mobileMenuOverlay" class="mobile-menu-overlay lg:hidden" type="button" aria-label="Close navigation menu" hidden></button>
+        <nav id="mobileMenu" class="mobile-menu-panel lg:hidden" aria-label="Mobile navigation" hidden>
+          <div class="mobile-menu-head">
+            <span>Navigate</span>
+            <button id="mobileMenuClose" type="button" aria-label="Close navigation menu">
+              <i data-lucide="x" class="h-4 w-4"></i>
+            </button>
+          </div>
+          <div class="mobile-menu-links">
+            <a href="#home" class="mobile-menu-link">Home</a>
+            <a href="#experience" class="mobile-menu-link">Experience</a>
+            <a href="#register" class="mobile-menu-link">Registration</a>
+            <a href="#packages" class="mobile-menu-link">Packages</a>
+            <a href="#sgt" class="mobile-menu-link">SGT</a>
+            <a href="#partners" class="mobile-menu-link">Partners</a>
+            <a href="#faq" class="mobile-menu-link">FAQ</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -261,14 +286,14 @@
               </h2>
             </div>
             <ul class="reveal grid divide-y divide-white/10 border-y border-white/10 sm:grid-cols-2">
-              <li class="included-item">High Tea</li>
-              <li class="included-item">Gala Entry</li>
-              <li class="included-item">Grand Dinner</li>
-              <li class="included-item">Awards &amp; Recognitions</li>
+              <li class="included-item">High Tea and Gala Dinner</li>
+              <li class="included-item">Access to Sicilian Outbound Gala</li>
+              <li class="included-item">Chapter Awards &amp; Recognitions</li>
               <li class="included-item">Sicilians Got Talent</li>
-              <li class="included-item">After Party</li>
+              <li class="included-item">5+ Artists</li>
               <li class="included-item">Beer, Wine &amp; Mocktails</li>
-              <li class="included-item">Curated Experiences Throughout</li>
+              <li class="included-item">3 Separate Curated Experiences</li>
+              <li class="included-item">Networking, Celebrations and Fun</li>
             </ul>
           </div>
         </div>
@@ -385,14 +410,14 @@
                   <span>Hotel</span><span class="text-right">1 Night</span><span class="text-right">2 Nights</span>
                 </div>
                 <ul class="mt-2 divide-y divide-white/10">
-                  <li class="hotel-row"><span>Maharana Bagh by Trulyy</span><b>&#8377;8,850</b><b>&#8377;14,900</b></li>
-                  <li class="hotel-row"><span>Yaan Wellness (Grand Lake View)</span><b>&#8377;9,500</b><b>&#8377;13,000</b></li>
-                  <li class="hotel-row"><span>Royal Retreat Resort &amp; Spa</span><b>&#8377;9,550</b><b>&#8377;12,700</b></li>
-                  <li class="hotel-row"><span>Holymont Resort Udaipur</span><b>&#8377;10,900</b><b>-</b></li>
-                  <li class="hotel-row"><span>Holymont Fort Udaipur</span><b>&#8377;10,900</b><b>&#8377;15,900</b></li>
-                  <li class="hotel-row"><span>Lebua Udaipur Daulatgarh</span><b>&#8377;11,000</b><b>&#8377;15,000</b></li>
-                  <li class="hotel-row"><span>Tree of Life Amara Resort</span><b>&#8377;11,500</b><b>&#8377;15,500</b></li>
-                  <li class="hotel-row"><span>Yaan Wellness Pool Villa</span><b>&#8377;12,500</b><b>&#8377;19,000</b></li>
+                  <li class="hotel-row"><span>Maharana Bagh by Trulyy</span><b data-stay="1 Night Stay">&#8377;8,850</b><b data-stay="2 Night Stay">&#8377;14,900</b></li>
+                  <li class="hotel-row"><span>Yaan Wellness (Grand Lake View)</span><b data-stay="1 Night Stay">&#8377;9,500</b><b data-stay="2 Night Stay">&#8377;13,000</b></li>
+                  <li class="hotel-row"><span>Royal Retreat Resort &amp; Spa</span><b data-stay="1 Night Stay">&#8377;9,550</b><b data-stay="2 Night Stay">&#8377;12,700</b></li>
+                  <li class="hotel-row"><span>Holymont Resort Udaipur</span><b data-stay="1 Night Stay">&#8377;10,900</b><b data-stay="2 Night Stay">-</b></li>
+                  <li class="hotel-row"><span>Holymont Fort Udaipur</span><b data-stay="1 Night Stay">&#8377;10,900</b><b data-stay="2 Night Stay">&#8377;15,900</b></li>
+                  <li class="hotel-row"><span>Lebua Udaipur Daulatgarh</span><b data-stay="1 Night Stay">&#8377;11,000</b><b data-stay="2 Night Stay">&#8377;15,000</b></li>
+                  <li class="hotel-row"><span>Tree of Life Amara Resort</span><b data-stay="1 Night Stay">&#8377;11,500</b><b data-stay="2 Night Stay">&#8377;15,500</b></li>
+                  <li class="hotel-row"><span>Yaan Wellness Pool Villa</span><b data-stay="1 Night Stay">&#8377;12,500</b><b data-stay="2 Night Stay">&#8377;19,000</b></li>
                 </ul>
                 <p class="mt-6 text-xs text-white/55">Tariffs are indicative. Final pricing and availability confirmed by official travel partners. All the prices mentioned above are inclusive of taxes.</p>
               </div>
@@ -420,9 +445,9 @@
                 This year, Sicilians Got Talent returns with Chapter Performances: more kinetic, more celebratory and more unforgettable.
               </p>
               <div class="sgt-timeline mt-10 grid gap-4 sm:grid-cols-3">
-                <div class="date-box"><p class="text-eyebrow">Auditions</p><p>4th &amp; 5th July</p></div>
-                <div class="date-box"><p class="text-eyebrow">Semi-Finals</p><p>18th July</p></div>
-                <div class="date-box"><p class="text-eyebrow">Finals</p><p>1st August, Udaipur</p></div>
+                <div class="date-box"><p class="text-eyebrow">Auditions</p><p>17th &amp; 18th July 2026</p></div>
+                <div class="date-box"><p class="text-eyebrow">Semi-Finals</p><p>26th July 2026</p></div>
+                <div class="date-box"><p class="text-eyebrow">Finals</p><p>1st August 2026, Udaipur</p></div>
               </div>
             </div>
 
@@ -504,6 +529,20 @@
           </div>
         </div>
       </section>
+
+      <section id="partners" class="relative overflow-hidden border-t border-white/10 py-28 sm:py-36">
+        <div class="aura chapter-social animate-gradient-shift opacity-45"></div>
+        <div class="noise"></div>
+        <div class="relative mx-auto max-w-[1440px] px-6 sm:px-10">
+          <div class="reveal max-w-4xl">
+            <p class="text-eyebrow">Partners</p>
+            <h2 class="mt-6 font-display text-fluid-subsection uppercase leading-[0.98]">
+              Our Event <span class="text-gold-grad">Partners</span>
+            </h2>
+          </div>
+          <div id="eventPartnersList" class="event-partners-grid reveal mt-14" style="transition-delay: 120ms"></div>
+        </div>
+      </section>
     </main>
 
     <footer class="relative border-t border-white/10 pb-12 pt-20">
@@ -583,6 +622,6 @@
       </div>
     </footer>
 
-    <script src="./app.js"></script>
+    <script src="./app.js?v=partner-assets-20260620"></script>
   </body>
 </html>

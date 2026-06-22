@@ -19,7 +19,7 @@ const FAQS = [
   {
     q: "What does the event registration include?",
     text: "registration includes social hours gala after hours high tea rj kunal reema gadani bollyjammers dj jolly monark khatri awards recognitions mocktails networking",
-    a: "<p>The registration gives you access to the complete Sicilian Outbound Gala 2026 experience.</p><p><strong>Sicilian Social Hours · 3:30 PM – 5:30 PM</strong><br />High tea, live music, and the kind of conversations that don't happen across a meeting table.</p><p><strong>Featuring:</strong></p><ul><li>RJ Kunal</li><li>Reema Gadani</li></ul><p><strong>The Sicilian Gala · 7:30 PM Onwards</strong><br />Sicilian Awards Night, Sicilian Got Talent Performances, Chapter Celebrations. A Gala Dinner.</p><p><strong>Featuring:</strong></p><ul><li>BollyJammers</li></ul><p>The evening your chapter will talk about for years.</p><p><strong>After Hours · 11:00 PM Onwards</strong><br />The ties come off. The volume goes up.</p><p><strong>Featuring:</strong></p><ul><li>DJ Jolly</li><li>Monark Khatri</li></ul><p><strong>What's Included</strong></p><ul><li>High Tea and Gala Dinner</li><li>Access to Sicilian Outbound Gala</li><li>Chapter Awards &amp; Recognitions</li><li>Sicilians Got Talent</li><li>5+ Artist</li><li>Beer, Wine &amp; Mocktails</li><li>3 separate curated Experiences</li><li>Networking, Celebrations and Fun</li></ul>",
+    a: "<p>The registration gives you access to the complete Sicilian Outbound Gala 2026 experience.</p><p><strong>Sicilian Social Hours · 3:30 PM – 5:30 PM</strong><br />High tea, live music, and the kind of conversations that don't happen across a meeting table.</p><p><strong>Featuring:</strong></p><ul><li>RJ Kunal</li><li>Reema Gadani</li></ul><p><strong>The Sicilian Gala · 7:30 PM Onwards</strong><br />Sicilian Awards Night, Sicilian Got Talent Performances, Chapter Celebrations. A Gala Dinner.</p><p><strong>Featuring:</strong></p><ul><li>BollyJammers</li></ul><p>The evening your chapter will talk about for years.</p><p><strong>After Hours · 11:00 PM Onwards</strong><br />The ties come off. The volume goes up.</p><p><strong>Featuring:</strong></p><ul><li>DJ Jolly</li><li>Monark Khatri</li></ul><p><strong>What's Included</strong></p><ul><li>High Tea and Gala Dinner</li><li>Access to Sicilian Outbound Gala</li><li>Chapter Awards &amp; Recognitions</li><li>Sicilians Got Talent</li><li>5+ Artists</li><li>Beer, Wine &amp; Mocktails</li><li>3 Separate Curated Experiences</li><li>Networking, Celebrations and Fun</li></ul>",
   },
   {
     q: "How do I register for the Sicilian Outbound Gala?",
@@ -104,7 +104,7 @@ const FAQS = [
   {
     q: "What is Sicilian’s Got Talent (SGT)?",
     text: "sicilian got talent sgt chapter singing dancing instrumental comedy skits cultural performances auditions semi finale finale",
-    a: "<p>Sicilian Got Talent 2026 is your opportunity to bring your chapter together, discover hidden talent, create unforgettable performances, and compete for chapter pride on one of the biggest stages of the year.</p><p>Whether it's singing, dancing, instrumental music, comedy, skits, cultural performances, band acts, or something completely unique, this is your chance to represent your chapter and create a performance that the entire Sicilian Tribe will remember.</p><ul><li>Auditions – 4th &amp; 5th July (Ahmedabad)</li><li>Semi Finale – 18th July (Ahmedabad)</li><li>Finale – 1st August (Udaipur, Holymont)</li></ul><p><a href=\"https://drive.google.com/file/d/1nRfbBJTw6tSFRW8rTVT8yR_dnUHs1mT_/view?usp=drive_link\" target=\"_blank\" rel=\"noopener noreferrer\">Click here for detailed rules and guidelines.</a></p>",
+    a: "<p>Sicilian Got Talent 2026 is your opportunity to bring your chapter together, discover hidden talent, create unforgettable performances, and compete for chapter pride on one of the biggest stages of the year.</p><p>Whether it's singing, dancing, instrumental music, comedy, skits, cultural performances, band acts, or something completely unique, this is your chance to represent your chapter and create a performance that the entire Sicilian Tribe will remember.</p><ul><li>Auditions – 17th &amp; 18th July 2026</li><li>Semi-Finale – 26th July 2026</li><li>Finals – 1st August 2026, Udaipur</li></ul><p><a href=\"https://drive.google.com/file/d/1nRfbBJTw6tSFRW8rTVT8yR_dnUHs1mT_/view?usp=drive_link\" target=\"_blank\" rel=\"noopener noreferrer\">Click here for detailed rules and guidelines.</a></p>",
   },
   {
     q: "How can my chapter participate in Sicilian Got Talent?",
@@ -120,6 +120,172 @@ const FAQS = [
     q: "Can I transfer my Sicilian Outbound Gala registration to another member?",
     text: "transfer registration non-transferable another member",
     a: "No. Registrations are non-transferable and cannot be transferred to another member under any circumstances.",
+  },
+];
+
+const EVENT_PARTNERS = [
+  {
+    role: "Creative & Design Partner",
+    name: "Dheeraj Maheshwari",
+    chapter: "BNI Maximus",
+    company: "MORPHIC STUDIO LLP",
+    photo: "./assets/partners/dheeraj-maheshwari.png",
+    logo: "./assets/partners/morphic-studio-logo.png",
+    instagram: "http://www.instagram.com/themorphicstudio.com",
+    website: "http://www.themorphicstudio.com/",
+    assetFolder: "https://drive.google.com/drive/folders/1KturvT0dIi4X2yb3ONFIdIveLoOfLUC3?usp=drive_link",
+  },
+  {
+    role: "Motion Graphic Partner",
+    name: "Vaibhav Kothari",
+    chapter: "BNI Helenus",
+    company: "OUT OF THE BOX",
+    photo: "./assets/partners/vaibhav-kothari.png",
+    logo: "./assets/partners/out-of-the-box-logo.png",
+    instagram: "https://www.instagram.com/i_am_va1bhav",
+    website: "http://www.otbideas.in/",
+    assetFolder: "https://drive.google.com/drive/folders/1QUakvkDbWERvCH4JY2DSX7F-eqtmWi21?usp=drive_link",
+  },
+  {
+    role: "Photography Partner",
+    name: "Jignesh Thacker",
+    chapter: "BNI Alethia",
+    company: "THIRDEYE PICTURES",
+    photo: "./assets/partners/jignesh-thacker.jpg",
+    logo: "./assets/partners/thirdeye-pictures-logo.png",
+    instagram: "https://www.instagram.com/thebioscope.co",
+    website: "http://www.thebioscope.co/",
+    assetFolder: "https://drive.google.com/drive/folders/14NIkRoE3ANPVA5-fGy-OgEnDLMsVBKWD?usp=drive_link",
+  },
+  {
+    role: "Videography Partner",
+    name: "Bhumil Soochak",
+    chapter: "BNI Makarios",
+    company: "BIOSCOPE",
+    photo: "./assets/partners/bhumil-soochak.jpg",
+    logo: "./assets/partners/bioscope-logo.png",
+    assetFolder: "https://drive.google.com/drive/folders/1rAR_WYfv-kfHj0xLl-pFLGqSvFr02YXD?usp=drive_link",
+  },
+  {
+    role: "Travel Partner",
+    name: "Heena Poriya",
+    chapter: "BNI Helenus",
+    company: "UNIVERSAL TRAVEL PLANNERS",
+    photo: "./assets/partners/heena-poriya.jpg",
+    logo: "./assets/partners/universal-travel-planners-logo.jpg",
+    instagram: "https://www.instagram.com/heena_poriya",
+    website: "http://www.universaltravelplanners.com/",
+    assetFolder: "https://drive.google.com/drive/folders/1RwPcn65VAViBFoR6WpdrpF_mbhSeGDZi?usp=drive_link",
+  },
+  {
+    role: "Travel Partner",
+    name: "Vivek Parikh",
+    chapter: "BNI Mythos",
+    company: "TRAVEL TRIP ONLINE PVT LTD",
+    photo: "./assets/partners/vivek-parikh.jpg",
+    logo: "./assets/partners/travel-trip-online-logo.jpg",
+    instagram: "https://www.instagram.com/travel_trip_online",
+    website: "http://www.traveltriponline.com/",
+    assetFolder: "https://drive.google.com/drive/folders/1NwwpHR8rEXLGY8oeUPBf6ihtR_c-JQW1?usp=drive_link",
+  },
+  {
+    role: "Travel Partner",
+    name: "Priyanka Parikh",
+    chapter: "BNI Ganicus",
+    company: "TRAVEL TRIP ONLINE PVT LTD",
+    photo: "./assets/partners/priyanka-parikh.jpg",
+    logo: "./assets/partners/travel-trip-online-logo.jpg",
+  },
+  {
+    role: "Outdoor Media Partner",
+    name: "Saket Shah",
+    chapter: "-",
+    company: "KAUSHIK OUTDOOR",
+    photo: "./assets/partners/saket-shah.jpg",
+    logo: "./assets/partners/kaushik-outdoor-logo.jpg",
+    instagram: "https://www.instagram.com/kaushikoutdoors?igsh=MW96NjlveXY4bHh4cA==",
+    website: "https://www.kaushikoutdoors.com/",
+    assetFolder: "https://drive.google.com/drive/folders/1FflF-aItd5lIQS6zxWobUOilKKpoT82k?usp=drive_link",
+  },
+  {
+    role: "Studio & Creative Reel Partner",
+    name: "Chirag Vagrecha",
+    chapter: "BNI Makarios",
+    company: "CHIRAG CREATIONS",
+    photo: "./assets/partners/chirag-vagrecha.jpg",
+    logo: "./assets/partners/chirag-creations-logo.jpg",
+    assetFolder: "https://drive.google.com/drive/folders/1u1ng-tBzxNw0iGkCu8iqI18-NGuXq9Jt?usp=drive_link",
+  },
+  {
+    role: "Digital Display Partner",
+    name: "Kiran Thaker",
+    chapter: "BNI Athena",
+    company: "ALANKRIT TECHNOLOGIES PVT LTD",
+    photo: "./assets/partners/kiran-thaker.jpg",
+    logo: "./assets/partners/alankrit-technologies-logo.png",
+    instagram: "https://www.instagram.com/alankrit_technologies?igsh=YXZ6NWIweWw1cThk",
+    website: "http://www.alankrittechnologies.com/",
+    assetFolder: "https://drive.google.com/drive/folders/1Ydy5ujpdcSNu1_kaMKjLp5EWJ_GHpzFK?usp=drive_link",
+  },
+  {
+    role: "Wardrobe Partner - Sicilian Social Hours (Mens)",
+    name: "Neha Gajjar",
+    chapter: "BNI Atlas",
+    company: "MAJEESTIC BOUTIQUE BY NEHA",
+    photo: "./assets/partners/neha-gajjar.jpg",
+    logo: "./assets/partners/majeestic-by-neha-logo.jpg",
+    instagram: "https://www.instagram.com/majeesticboutique_byneha?igsh=MWoxdTlycmNtZmxsMw%3D%3D&utm_source=qr",
+    website: "https://majeesticbyneha.com/",
+    assetFolder: "https://drive.google.com/drive/folders/1tgo688_vgPNxv0skmm_Zh8IpNvgCHzfi?usp=drive_link",
+  },
+  {
+    role: "Wardrobe Partner - Gala Night (Mens)",
+    name: "Sahil Sanghvi",
+    chapter: "BNI Anthropos",
+    company: "ACCURATE",
+    photo: "./assets/partners/sahil-sanghvi.png",
+    logo: "./assets/partners/accurate-logo.png",
+    assetFolder: "https://drive.google.com/drive/folders/1IHSTa3mLWc78NqH0RIasUeU62Y9ZyuuD?usp=drive_link",
+  },
+  {
+    role: "PR Partner",
+    name: "Vikas Thakkar",
+    chapter: "BNI Prometheus",
+    company: "TVM COMMUNICATION",
+    photo: "./assets/partners/vikas-thakkar.jpg",
+    logo: "./assets/partners/tvm-communication-logo.jpg",
+    instagram: "https://www.instagram.com/tvmcommunication?igsh=ZXJmd3R3eW5wN3Jo",
+    website: "https://tvmpr.com/",
+    assetFolder: "https://drive.google.com/drive/folders/1SEZM4kjqvih9QGhkgd2M5hTvC4_rKiV-?usp=drive_link",
+  },
+  {
+    role: "Logistic Partner",
+    name: "Parth Shah",
+    chapter: "BNI Zenobia",
+    company: "NAVKAR ENTERPRISE",
+    photo: "./assets/partners/parth-shah.jpg",
+    logo: "./assets/partners/navkar-enterprise-logo.jpg",
+    instagram: "https://www.instagram.com/navkar_enterprise_dtdc",
+    assetFolder: "https://drive.google.com/drive/folders/1zx2MbePcbrh0LvOE1nz_phibU9xJx68k?usp=drive_link",
+  },
+  {
+    role: "Gifting Partner",
+    name: "Nency Shah Patel",
+    chapter: "BNI Lincoln",
+    company: "CFY GIFTING",
+    photo: "./assets/partners/nency-shah-patel.jpg",
+    logo: "./assets/partners/cfy-gifting-logo.jpg",
+    instagram: "https://www.instagram.com/candlesforyou0708?igsh=MTBwaTZ4NHRzbzR3ag%3D%3D&utm_source=qr",
+    assetFolder: "https://drive.google.com/drive/folders/1-EVIqefH7rwUcPiCHx67BF483vryR3rK?usp=drive_link",
+  },
+  {
+    role: "Gifting Partner",
+    name: "Gurjotsingh Digwa",
+    chapter: "BNI Makarios",
+    company: "SHAGUN RATNA",
+    photo: "./assets/partners/gurjotsingh-digwa.jpg",
+    logo: "./assets/partners/shagun-ratna-logo.jpg",
+    assetFolder: "https://drive.google.com/drive/folders/1CvQdMiwRIOeOzqJDzikLRjbrYpq_s15G?usp=drive_link",
   },
 ];
 
@@ -207,6 +373,80 @@ function escapeHtml(value) {
     .replace(/'/g, "&#039;");
 }
 
+function partnerInitials(name) {
+  return String(name)
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("")
+    .toUpperCase();
+}
+
+const PARTNER_LINK_ICONS = {
+  instagram: `
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+      <circle cx="12" cy="12" r="3.7" />
+      <circle cx="17.3" cy="6.7" r="1" />
+    </svg>
+  `,
+  website: `
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M3.5 12h17" />
+      <path d="M12 3.5c2.2 2.3 3.4 5.1 3.4 8.5s-1.2 6.2-3.4 8.5" />
+      <path d="M12 3.5C9.8 5.8 8.6 8.6 8.6 12s1.2 6.2 3.4 8.5" />
+    </svg>
+  `,
+};
+
+function renderEventPartners() {
+  const list = qs("#eventPartnersList");
+  if (!list) {
+    return;
+  }
+
+  list.innerHTML = EVENT_PARTNERS.map((partner) => {
+    const photoContent = partner.photo
+      ? `<img src="${escapeHtml(partner.photo)}" alt="${escapeHtml(partner.name)}" loading="lazy" />`
+      : `<span>${escapeHtml(partnerInitials(partner.name))}</span><small>Partner Photo</small>`;
+    const logoContent = partner.logo
+      ? `<img src="${escapeHtml(partner.logo)}" alt="${escapeHtml(partner.company)} logo" loading="lazy" />`
+      : `<span>${escapeHtml(partner.company)}</span><small>Company Logo</small>`;
+    const links = [
+      partner.instagram
+        ? `<a class="event-partner-link event-partner-link-instagram" href="${escapeHtml(partner.instagram)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(partner.name)} Instagram"><span class="event-partner-link-icon">${PARTNER_LINK_ICONS.instagram}</span><span>Instagram</span></a>`
+        : "",
+      partner.website
+        ? `<a class="event-partner-link event-partner-link-website" href="${escapeHtml(partner.website)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(partner.name)} website"><span class="event-partner-link-icon">${PARTNER_LINK_ICONS.website}</span><span>Website</span></a>`
+        : "",
+    ]
+      .filter(Boolean)
+      .join("");
+
+    return `
+      <article class="event-partner-card" data-asset-folder="${escapeHtml(partner.assetFolder || "")}">
+        <div class="event-partner-media">
+          <div class="event-partner-photo">
+            ${photoContent}
+          </div>
+          <div class="event-partner-logo${partner.logo ? " has-logo-image" : ""}">
+            ${logoContent}
+          </div>
+        </div>
+        <div class="event-partner-body">
+          <p class="event-partner-role">${escapeHtml(partner.role)}</p>
+          <h3>${escapeHtml(partner.name)}</h3>
+          <p class="event-partner-meta">${escapeHtml(partner.chapter)}</p>
+          <p class="event-partner-company">${escapeHtml(partner.company)}</p>
+        </div>
+        <div class="event-partner-links${links ? "" : " is-empty"}">${links}</div>
+      </article>
+    `;
+  }).join("");
+}
+
 function setupRevealAnimations() {
   const revealItems = qsa(".reveal");
   if (!("IntersectionObserver" in window)) {
@@ -268,6 +508,84 @@ function setupSgtSlider() {
   }
 }
 
+function setupMobileMenu() {
+  const toggle = qs("#mobileMenuToggle");
+  const menu = qs("#mobileMenu");
+  const overlay = qs("#mobileMenuOverlay");
+  const closeButton = qs("#mobileMenuClose");
+
+  if (!toggle || !menu || !overlay || !closeButton) {
+    return;
+  }
+
+  let closeTimer;
+  const desktopQuery = window.matchMedia("(min-width: 1024px)");
+
+  const openMenu = () => {
+    clearTimeout(closeTimer);
+    menu.hidden = false;
+    overlay.hidden = false;
+    window.requestAnimationFrame(() => {
+      menu.classList.add("is-open");
+      overlay.classList.add("is-open");
+      toggle.classList.add("is-open");
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", "Close navigation menu");
+    });
+  };
+
+  const closeMenu = () => {
+    menu.classList.remove("is-open");
+    overlay.classList.remove("is-open");
+    toggle.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open navigation menu");
+
+    clearTimeout(closeTimer);
+    closeTimer = window.setTimeout(() => {
+      menu.hidden = true;
+      overlay.hidden = true;
+    }, 240);
+  };
+
+  toggle.addEventListener("click", () => {
+    if (menu.classList.contains("is-open")) {
+      closeMenu();
+      return;
+    }
+
+    openMenu();
+  });
+
+  closeButton.addEventListener("click", closeMenu);
+  overlay.addEventListener("click", closeMenu);
+  menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+
+  document.addEventListener("click", (event) => {
+    if (!menu.classList.contains("is-open")) {
+      return;
+    }
+
+    if (menu.contains(event.target) || toggle.contains(event.target)) {
+      return;
+    }
+
+    closeMenu();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menu.classList.contains("is-open")) {
+      closeMenu();
+    }
+  });
+
+  desktopQuery.addEventListener("change", (event) => {
+    if (event.matches) {
+      closeMenu();
+    }
+  });
+}
+
 function setupPopup() {
   const popup = qs("#countdownPopup");
   const close = () => {
@@ -311,8 +629,10 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCountdown();
   setInterval(updateCountdown, 1000);
   renderFaq();
+  renderEventPartners();
   setupRevealAnimations();
   setupSgtSlider();
+  setupMobileMenu();
   setupPopup();
   qs("#faqSearch").addEventListener("input", renderFaq);
   window.addEventListener("resize", syncHeaderOffset);
