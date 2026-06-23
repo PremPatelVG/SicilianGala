@@ -142,6 +142,7 @@ const EVENT_PARTNERS = [
     company: "OUT OF THE BOX",
     photo: "./assets/partners/vaibhav-kothari.png",
     logo: "./assets/partners/out-of-the-box-logo.png",
+    fullImage: true,
     instagram: "https://www.instagram.com/i_am_va1bhav",
     website: "http://www.otbideas.in/",
     assetFolder: "https://drive.google.com/drive/folders/1QUakvkDbWERvCH4JY2DSX7F-eqtmWi21?usp=drive_link",
@@ -285,6 +286,7 @@ const EVENT_PARTNERS = [
     company: "SHAGUN RATNA",
     photo: "./assets/partners/gurjotsingh-digwa.jpg",
     logo: "./assets/partners/shagun-ratna-logo.jpg",
+    fullImage: true,
     assetFolder: "https://drive.google.com/drive/folders/1CvQdMiwRIOeOzqJDzikLRjbrYpq_s15G?usp=drive_link",
   },
 ];
@@ -425,8 +427,12 @@ function renderEventPartners() {
       .filter(Boolean)
       .join("");
 
+    const cardClasses = ["event-partner-card", partner.fullImage ? "event-partner-card-full-image" : ""]
+      .filter(Boolean)
+      .join(" ");
+
     return `
-      <article class="event-partner-card" data-asset-folder="${escapeHtml(partner.assetFolder || "")}">
+      <article class="${cardClasses}" data-asset-folder="${escapeHtml(partner.assetFolder || "")}">
         <div class="event-partner-media">
           <div class="event-partner-photo">
             ${photoContent}

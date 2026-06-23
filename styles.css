@@ -879,6 +879,23 @@ input {
   padding: 0.5rem;
 }
 
+.event-partner-card-full-image .event-partner-photo {
+  padding: 0.7rem;
+}
+
+.event-partner-card-full-image .event-partner-photo img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.event-partner-card-full-image .event-partner-logo {
+  padding: 0.55rem;
+}
+
+.event-partner-card-full-image .event-partner-logo img {
+  padding: 0.25rem;
+}
+
 .event-partner-photo small,
 .event-partner-logo small {
   align-self: end;
