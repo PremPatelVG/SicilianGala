@@ -883,17 +883,26 @@ input {
   padding: 0.7rem;
 }
 
+.event-partner-card-full-image .event-partner-media {
+  height: 12rem;
+}
+
 .event-partner-card-full-image .event-partner-photo img {
   object-fit: contain;
   object-position: center;
 }
 
 .event-partner-card-full-image .event-partner-logo {
-  padding: 0.55rem;
+  padding: 0.75rem;
 }
 
+.event-partner-card-full-image .event-partner-photo img,
 .event-partner-card-full-image .event-partner-logo img {
-  padding: 0.25rem;
+  width: auto;
+  height: calc(100% - 1.5rem);
+  max-width: 100%;
+  max-height: calc(100% - 1.5rem);
+  padding: 0;
 }
 
 .event-partner-photo small,
