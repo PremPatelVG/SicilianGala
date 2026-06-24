@@ -778,8 +778,8 @@ input {
 .event-partner-card {
   position: relative;
   display: grid;
-  min-height: 25.5rem;
-  grid-template-rows: auto auto auto;
+  height: 25.5rem;
+  grid-template-rows: 10.25rem 10.5rem 2.35rem;
   align-content: start;
   overflow: hidden;
   border: 1px solid rgb(255 255 255 / 0.1);
@@ -819,7 +819,7 @@ input {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
-  height: 10.25rem;
+  height: 100%;
 }
 
 .event-partner-photo,
@@ -838,6 +838,7 @@ input {
   background:
     radial-gradient(circle at 50% 18%, rgb(212 166 74 / 0.24), transparent 48%),
     rgb(12 9 18 / 0.82);
+  padding: 0.25rem;
 }
 
 .event-partner-photo span {
@@ -848,7 +849,7 @@ input {
 }
 
 .event-partner-logo {
-  padding: 0.85rem;
+  padding: 0.7rem;
 }
 
 .event-partner-logo.has-logo-image {
@@ -865,44 +866,21 @@ input {
 
 .event-partner-photo img,
 .event-partner-logo img {
+  display: block;
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .event-partner-photo img {
-  object-fit: cover;
-  object-position: center top;
-}
-
-.event-partner-logo img {
-  object-fit: contain;
-  padding: 0.5rem;
-}
-
-.event-partner-card-full-image .event-partner-photo {
-  padding: 0.7rem;
-}
-
-.event-partner-card-full-image .event-partner-media {
-  height: 12rem;
-}
-
-.event-partner-card-full-image .event-partner-photo img {
   object-fit: contain;
   object-position: center;
 }
 
-.event-partner-card-full-image .event-partner-logo {
-  padding: 0.75rem;
-}
-
-.event-partner-card-full-image .event-partner-photo img,
-.event-partner-card-full-image .event-partner-logo img {
-  width: auto;
-  height: calc(100% - 1.5rem);
-  max-width: 100%;
-  max-height: calc(100% - 1.5rem);
-  padding: 0;
+.event-partner-logo img {
+  object-fit: contain;
+  object-position: center;
 }
 
 .event-partner-photo small,
@@ -917,13 +895,12 @@ input {
 
 .event-partner-body {
   display: grid;
-  grid-template-rows: 2.35rem 2.7rem 1.42rem 2.45rem;
-  padding-top: 0.78rem;
+  grid-template-rows: 3rem 2.65rem 1.75rem 2.45rem;
+  padding-top: 0.65rem;
 }
 
 .event-partner-role {
   margin: 0;
-  min-height: 2.35rem;
   color: var(--gold);
   font-size: 0.64rem;
   font-weight: 700;
@@ -960,6 +937,7 @@ input {
 .event-partner-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 0.65rem;
   min-height: 2.35rem;
   align-self: start;
@@ -1027,16 +1005,17 @@ input {
 
 @media (max-width: 39.98rem) {
   .event-partner-card {
-    min-height: 24.85rem;
+    height: 24.85rem;
+    grid-template-rows: 9.5rem 10.4rem 2.35rem;
   }
 
   .event-partner-media {
-    height: 9.5rem;
+    height: 100%;
   }
 
   .event-partner-body {
-    grid-template-rows: 2.35rem 2.5rem 1.42rem 2.35rem;
-    padding-top: 0.72rem;
+    grid-template-rows: 3rem 2.6rem 1.75rem 2.4rem;
+    padding-top: 0.65rem;
   }
 }
 
