@@ -463,7 +463,10 @@ function setupRevealAnimations() {
         }
       });
     },
-    { threshold: 0.14 },
+    {
+      rootMargin: "0px 0px -5% 0px",
+      threshold: 0.01,
+    },
   );
 
   revealItems.forEach((item) => observer.observe(item));
