@@ -472,6 +472,30 @@ function setupRevealAnimations() {
   revealItems.forEach((item) => observer.observe(item));
 }
 
+function restoreHashScroll() {
+  const hash = window.location.hash;
+  if (!hash || hash.length <= 1) {
+    return;
+  }
+
+  let target;
+  try {
+    target = document.querySelector(hash);
+  } catch {
+    return;
+  }
+
+  if (!target) {
+    return;
+  }
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      target.scrollIntoView({ block: "start" });
+    });
+  });
+}
+
 function setupSgtSlider() {
   const slider = qs("[data-sgt-slider]");
   if (!slider) {
@@ -634,11 +658,16 @@ document.addEventListener("DOMContentLoaded", () => {
   renderFaq();
   renderEventPartners();
   setupRevealAnimations();
+  restoreHashScroll();
   setupSgtSlider();
   setupMobileMenu();
   setupPopup();
   qs("#faqSearch").addEventListener("input", renderFaq);
   window.addEventListener("resize", syncHeaderOffset);
-  window.addEventListener("load", syncHeaderOffset);
+  window.addEventListener("load", () => {
+    syncHeaderOffset();
+    restoreHashScroll();
+  });
+  window.addEventListener("hashchange", restoreHashScroll);
   refreshIcons();
 });
