@@ -489,10 +489,14 @@ function restoreHashScroll() {
     return;
   }
 
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      target.scrollIntoView({ block: "start" });
-    });
+  const scrollToTarget = () => {
+    target.scrollIntoView({ block: "start", inline: "nearest" });
+  };
+
+  scrollToTarget();
+  requestAnimationFrame(scrollToTarget);
+  [80, 300, 800, 1600].forEach((delay) => {
+    window.setTimeout(scrollToTarget, delay);
   });
 }
 
@@ -618,7 +622,13 @@ function setupPopup() {
   const close = () => {
     popup.classList.add("hidden");
     popup.classList.remove("flex");
-    qs("#home").scrollIntoView({ behavior: "smooth" });
+
+    if (window.location.hash && window.location.hash !== "#home") {
+      restoreHashScroll();
+      return;
+    }
+
+    qs("#home")?.scrollIntoView({ behavior: "smooth" });
   };
 
   qs("#closePopup").addEventListener("click", close);
